@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/wp-content/plugins/react-plugin/build/static/css/main.f855e6bc.css",
+    "main.js": "/wp-content/plugins/react-plugin/build/static/js/main.c89d6273.js",
+    "static/js/453.4e52261b.chunk.js": "/wp-content/plugins/react-plugin/build/static/js/453.4e52261b.chunk.js",
+    "static/media/WordPress_blue_logo.svg.png": "/wp-content/plugins/react-plugin/build/static/media/WordPress_blue_logo.svg.1be9549bc05b8dad4f1f.png",
+    "static/media/logo.svg": "/wp-content/plugins/react-plugin/build/static/media/logo.e6b0c7cbf2fe1e4811c056968ed07262.svg",
+    "index.html": "/wp-content/plugins/react-plugin/build/index.html",
+    "main.f855e6bc.css.map": "/wp-content/plugins/react-plugin/build/static/css/main.f855e6bc.css.map",
+    "main.c89d6273.js.map": "/wp-content/plugins/react-plugin/build/static/js/main.c89d6273.js.map",
+    "453.4e52261b.chunk.js.map": "/wp-content/plugins/react-plugin/build/static/js/453.4e52261b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.c89d6273.js"
+  ]
+}
