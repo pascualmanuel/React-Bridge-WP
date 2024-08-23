@@ -36,7 +36,7 @@ El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sit
    - Asegúrate de que la estructura del build sea correcta. El build debe contener una carpeta `static` que incluya las subcarpetas `js`, `css`, y `media`. Puedes ver un ejemplo de la estructura correcta en el repositorio [WP-React-Bridge](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example).
 
 6. **Ejemplo de Build**
-   - En el repositorio [WP-React-Bridge](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example), puedes encontrar una aplicación React con la carpeta `build` ya generada dentro. Si necesitas un ejemplo para probar, simplemente toma esta carpeta `build`, súbela al plugin de WordPress con el Empty Theme activo, y deberías ver la aplicación React funcionando correctamente.
+   - En el repositorio, puedes encontrar una aplicación React con la carpeta `build` ya generada dentro la aplicacion es [build-example](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example). Si necesitas un ejemplo para probar, simplemente toma esta carpeta [build](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/build-example/build.zip), súbela al plugin de WordPress con el Empty Theme activo, y deberías ver la aplicación React funcionando correctamente.
 
 ## Uso
 
