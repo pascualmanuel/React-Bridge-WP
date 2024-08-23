@@ -1,43 +1,47 @@
-# WP React Bridge
+# WP-React-Bridge
 
-## Instalación y Configuración
+## Descripción
 
-1. **Instalar el Plugin React**
+El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sitio de WordPress. Puedes cargar tu aplicación React directamente desde el panel de administración de WordPress.
 
-   - Descarga e instala el plugin **React Plugin** desde el repositorio de WordPress o súbelo manualmente a través del panel de administración de WordPress.
+## Instalación
 
-2. **Instalar el Empty Theme**
+1. **Instala el Plugin React**
 
-   - Descarga e instala el tema **Empty Theme** desde el repositorio de WordPress o súbelo manualmente a través del panel de administración de temas.
+   - Descarga el plugin desde el repositorio. Es el zip llamado react-plugin
+   - Sube el plugin a tu WordPress.
+   - Activa el plugin desde el panel de administración de WordPress.
 
-3. **Configurar el Proyecto React**
+2. **Instala el Tema Vacío (Empty Theme)**
 
-   - Abre el archivo `package.json` en tu proyecto React.
-   - Añade la siguiente línea en la sección de configuración:
+   - Descarga e instala el tema vacío desde el repositorio. Es el zip llamado empty-theme
+   - Activa el tema vacío en la sección de Temas en el panel de administración de WordPress.
+
+3. **Configura el Proyecto React**
+
+   - En el archivo `package.json` de tu proyecto React, agrega la siguiente línea al final del archivo:
      ```json
      "homepage": "/wp-content/plugins/react-plugin/build"
      ```
+   - Construye tu proyecto React ejecutando `npm run build` o `yarn build`.
 
-4. **Generar el Build de React**
+4. **Sube el Build al Plugin**
 
-   - Ejecuta el comando de build en tu proyecto React. Por lo general, esto se hace con:
-     ```bash
-     npm run build
-     ```
+   - En el panel de administración de WordPress, ve a la página de configuración del plugin React.
+   - Arrastra y suelta el archivo ZIP que contiene la carpeta `build` de tu proyecto React.
 
-5. **Subir el Build al Plugin**
+5. **Solución de Problemas**
 
-   - Una vez generado el build, ve a la página de configuración del plugin **React Plugin** en el panel de administración de WordPress.
-   - Usa el formulario para cargar el archivo ZIP que contiene la carpeta build generada.
+   - Si el sitio no carga el build, verifica que tu hosting permita subir archivos pesados.
 
-6. **Verificar la Carga**
+6. **Ejemplo de Build**
 
-   - Si el sitio no muestra el contenido del build, verifica que el hosting permita la carga de archivos grandes.
+   - Puedes encontrar un ejemplo de build en el [repositorio](enlace-al-repositorio).
 
-7. **¡Listo!**
-   - Tu aplicación React ahora debería estar integrada en tu sitio WordPress.
+## Uso
 
-## Notas
+Una vez que hayas subido y activado tu aplicación React, el contenido se mostrará en el área del pie de página de tu sitio de WordPress. No necesitas modificar el tema de WordPress, ya que el plugin manejará la carga de tu aplicación React.
 
-- Asegúrate de que tu archivo ZIP contenga la estructura correcta de la carpeta build.
-- Si encuentras problemas, verifica los permisos de archivo y las configuraciones de PHP en tu servidor de hosting.
+## Licencia
+
+Este plugin está disponible bajo la [Licencia MIT](enlace-a-la-licencia).
