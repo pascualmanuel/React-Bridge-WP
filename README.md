@@ -27,7 +27,7 @@ El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sit
 
 4. **Sube el Build al Plugin**
 
-   - En el panel de administración de WordPress, ve a la página de configuración del plugin React.
+   - En el panel de administración de WordPress, ve a la página de configuración del WP-React-Bridge.
    - Arrastra y suelta el archivo ZIP que contiene la carpeta `build` de tu proyecto React.
 
 5. **Solución de Problemas**
