@@ -1,6 +1,6 @@
 # WP-React-Bridge
 
-## [Leer esto en inglés](README.md)
+_Este README se puede leer también en [Inglés](README.md), [Alemán](README.de.md), y [Frances](README.fr.md)._
 
 ## Descripción
 
