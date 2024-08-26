@@ -1,7 +1,7 @@
 # WP-React-Bridge
 
-\_This Readme can also be read in [Spanish](README.es.md),
-[German](README.de.md) and [French](README.fr.md)
+\_Diese Readme-Datei kann auch auf [Englisch](README.md),
+[Spanisch](README.es.md) und [Französisch](README.fr.md) gelesen werden.
 
 ## Descripción
 
