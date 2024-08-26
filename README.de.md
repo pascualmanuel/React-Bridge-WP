@@ -1,10 +1,10 @@
-# WP-React-Bridge
+# # React Bridge WP
 
 _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md) und [Französisch](README.fr.md) gelesen werden._
 
 ## Beschreibung
 
-**WP-React-Bridge** ermöglicht eine einfache Integration von React-Anwendungen in Ihre WordPress-Website. Sie können Ihre React-Anwendung direkt über das WordPress-Admin-Panel laden.
+**React Bridge WP** ermöglicht eine einfache Integration von React-Anwendungen in Ihre WordPress-Website. Sie können Ihre React-Anwendung direkt über das WordPress-Admin-Panel laden.
 
 ## Installation
 
@@ -12,7 +12,7 @@ _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md
 
    - Laden Sie das Plugin aus dem Repository herunter. Es handelt sich um die ZIP-Datei namens [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
    - Laden Sie das Plugin in Ihre WordPress-Installation hoch.
-   - Aktivieren Sie das Plugin im WordPress-Admin-Panel. Beim Aktivieren des Plugins wird automatisch ein leeres Theme mit dem Namen **WP React Bridge Empty Theme** erstellt und aktiviert. Außerdem wird das Plugin eine Beispielseite generieren, die auf der Startseite Ihrer Website angezeigt werden sollte, um zu überprüfen, ob das Plugin ordnungsgemäß funktioniert.
+   - Aktivieren Sie das Plugin im WordPress-Admin-Panel. Beim Aktivieren des Plugins wird automatisch ein leeres Theme mit dem Namen **React Bridge Empty Theme** erstellt und aktiviert. Außerdem wird das Plugin eine Beispielseite generieren, die auf der Startseite Ihrer Website angezeigt werden sollte, um zu überprüfen, ob das Plugin ordnungsgemäß funktioniert.
 
 2. **Konfigurieren Sie das React-Projekt**
 
@@ -24,7 +24,7 @@ _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md
 
 3. **Laden Sie das Build in das Plugin hoch**
 
-   - Gehen Sie im WordPress-Admin-Panel zur Einstellungsseite von WP-React-Bridge.
+   - Gehen Sie im WordPress-Admin-Panel zur Einstellungsseite von React Bridge WP.
    - Ziehen Sie die ZIP-Datei mit dem `build`-Ordner Ihres React-Projekts und lassen Sie sie fallen.
    - Dieses Build ersetzt das aktuelle Beispiel-Build und zeigt Ihre React-Anwendung an. Sie können beliebig viele Builds hochladen, wobei das zuletzt hochgeladene die vorherige Version überschreibt.
 

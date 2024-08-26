@@ -1,10 +1,10 @@
-# WP-React-Bridge
+# React Bridge WP
 
 _Este README se puede leer también en [Inglés](README.md), [Alemán](README.de.md), y [Frances](README.fr.md)._
 
 ## Descripción
 
-El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sitio de WordPress. Puedes cargar tu aplicación React directamente desde el panel de administración de WordPress.
+El **React Bridge WP** permite integrar fácilmente aplicaciones React en tu sitio de WordPress. Puedes cargar tu aplicación React directamente desde el panel de administración de WordPress.
 
 ## Instalación
 
@@ -12,7 +12,7 @@ El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sit
 
    - Descarga el plugin desde el repositorio. Es el zip llamado [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
    - Sube el plugin a tu WordPress.
-   - Activa el plugin desde el panel de administración de WordPress. Al activar el plugin, se creará y activará automáticamente un tema vacío llamado **WP React Bridge Empty Theme**. Además, el plugin generará una página de ejemplo, que debería mostrarse en la página principal del sitio para verificar que el plugin está funcionando correctamente.
+   - Activa el plugin desde el panel de administración de WordPress. Al activar el plugin, se creará y activará automáticamente un tema vacío llamado **React Bridge Empty Theme**. Además, el plugin generará una página de ejemplo, que debería mostrarse en la página principal del sitio para verificar que el plugin está funcionando correctamente.
 
 2. **Configura el Proyecto React**
 
@@ -24,7 +24,7 @@ El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sit
 
 3. **Sube el Build al Plugin**
 
-   - En el panel de administración de WordPress, ve a la página de configuración del WP-React-Bridge.
+   - En el panel de administración de WordPress, ve a la página de configuración del React Bridge WP.
    - Arrastra y suelta el archivo ZIP que contiene la carpeta `build` de tu proyecto React.
    - Ese build suplantará el build actual de ejemplo mostrando tu aplicación de React. Se pueden subir tantos builds como sea necesario, y el último que se suba sobrescribirá el anterior.
 
