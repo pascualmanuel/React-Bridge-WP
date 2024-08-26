@@ -2,7 +2,7 @@
 /*
 Plugin Name: React Bridge WP
 Description: Un plugin para integrar React en WordPress.
-Version: 6.7
+Version: 7.0
 Author: Labba Studio - Manuel
 Author URI: https://www.labba.studio/
 */

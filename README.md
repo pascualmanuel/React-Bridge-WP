@@ -1,30 +1,30 @@
-# WP React Bridge
+# React Bridge WP
 
 _This README can also be read in [Spanish](README.es.md), [German](README.de.md), and [French](README.fr.md)._
 
 ## Description
 
-**WP React Bridge** allows you to easily integrate React applications into your WordPress site. You can load your React application directly from the WordPress admin panel.
+**React Bridge WP** allows you to easily integrate React applications into your WordPress site. You can load your React application directly from the WordPress admin panel.
 
 ## Installation
 
 1. **Install the React Plugin**
 
-   - Download the plugin from the repository. It is the zip file named [react-plugin](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-plugin.zip).
+   - Download the plugin from the repository. It is the zip file named [react-bridge](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-bridge.zip).
    - Upload the plugin to your WordPress installation.
-   - Activate the plugin from the WordPress admin panel. Upon activation, the plugin will automatically create and activate a blank theme called **WP React Bridge Empty Theme**. Additionally, the plugin will generate a sample page that should appear on the homepage of your site to verify that the plugin is functioning correctly.
+   - Activate the plugin from the WordPress admin panel. Upon activation, the plugin will automatically create and activate a blank theme called **React Bridge Empty Theme**. Additionally, the plugin will generate a sample page that should appear on the homepage of your site to verify that the plugin is functioning correctly.
 
 2. **Configure the React Project**
 
    - In the `package.json` file of your React project, add the following line at the end of the file:
      ```json
-     "homepage": "/wp-content/plugins/react-plugin/build"
+     "homepage": "/wp-content/plugins/react-bridge/build"
      ```
    - Build your React project by running `npm run build` or `yarn build`.
 
 3. **Upload the Build to the Plugin**
 
-   - In the WordPress admin panel, go to the WP React Bridge settings page.
+   - In the WordPress admin panel, go to the React Bridge WP settings page.
    - Drag and drop the ZIP file containing the `build` folder of your React project.
    - This build will replace the current example build, displaying your React application. You can upload as many builds as necessary, and the most recent upload will overwrite the previous one.
 

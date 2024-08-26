@@ -8,9 +8,9 @@ _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md
 
 ## Installation
 
-1. **Installieren Sie das React-Plugin**
+1. **Installieren Sie das react-bridge**
 
-   - Laden Sie das Plugin aus dem Repository herunter. Es handelt sich um die ZIP-Datei namens [react-plugin](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-plugin.zip).
+   - Laden Sie das Plugin aus dem Repository herunter. Es handelt sich um die ZIP-Datei namens [react-bridge](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-bridge.zip).
    - Laden Sie das Plugin in Ihre WordPress-Installation hoch.
    - Aktivieren Sie das Plugin im WordPress-Admin-Panel. Beim Aktivieren des Plugins wird automatisch ein leeres Theme mit dem Namen **React Bridge Empty Theme** erstellt und aktiviert. Außerdem wird das Plugin eine Beispielseite generieren, die auf der Startseite Ihrer Website angezeigt werden sollte, um zu überprüfen, ob das Plugin ordnungsgemäß funktioniert.
 
@@ -18,7 +18,7 @@ _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md
 
    - Fügen Sie in der `package.json`-Datei Ihres React-Projekts am Ende der Datei folgende Zeile hinzu:
      ```json
-     "homepage": "/wp-content/plugins/react-plugin/build"
+     "homepage": "/wp-content/plugins/react-bridge/build"
      ```
    - Erstellen Sie Ihr React-Projekt mit `npm run build` oder `yarn build`.
 
