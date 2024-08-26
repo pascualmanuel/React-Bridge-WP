@@ -10,7 +10,7 @@ El **React Bridge WP** permite integrar fácilmente aplicaciones React en tu sit
 
 1. **Instala el Plugin React**
 
-   - Descarga el plugin desde el repositorio. Es el zip llamado [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
+   - Descarga el plugin desde el repositorio. Es el zip llamado [react-plugin](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-plugin.zip).
    - Sube el plugin a tu WordPress.
    - Activa el plugin desde el panel de administración de WordPress. Al activar el plugin, se creará y activará automáticamente un tema vacío llamado **React Bridge Empty Theme**. Además, el plugin generará una página de ejemplo, que debería mostrarse en la página principal del sitio para verificar que el plugin está funcionando correctamente.
 
@@ -31,7 +31,7 @@ El **React Bridge WP** permite integrar fácilmente aplicaciones React en tu sit
 4. **Solución de Problemas**
 
    - Si el sitio no carga el build, verifica que tu hosting permita subir archivos pesados.
-   - Asegúrate de que la estructura del build sea correcta. El build debe contener una carpeta `static` que incluya las subcarpetas `js`, `css`, y `media`. Puedes ver un ejemplo de la estructura correcta en el repositorio [build-example](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example).
+   - Asegúrate de que la estructura del build sea correcta. El build debe contener una carpeta `static` que incluya las subcarpetas `js`, `css`, y `media`. Puedes ver un ejemplo de la estructura correcta en el repositorio [build-example](https://github.com/pascualmanuel/React-Bridge-WP/tree/main/build-example).
 
 ## Requisitos del Hosting
 

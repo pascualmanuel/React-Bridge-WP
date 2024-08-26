@@ -1,19 +1,19 @@
 <?php
 /*
-Plugin Name: WP-React-Bridge
+Plugin Name: React Bridge WP
 Description: Un plugin para integrar React en WordPress.
 Version: 6.7
 Author: Labba Studio - Manuel
 Author URI: https://www.labba.studio/
 */
 
-// Añadir el menú de WP-React-Bridge en el panel de administración
+// Añadir el menú de React Bridge WP en el panel de administración
 function react_plugin_menu() {
     add_menu_page(
-        'WP-React-Bridge',            // Título de la página
-        'WP-React-Bridge',            // Título del menú
+        'React Bridge WP',            // Título de la página
+        'React Bridge WP',            // Título del menú
         'manage_options',             // Capacidad
-        'wp-react-bridge',            // Slug del menú
+        'react-bridge-wp',            // Slug del menú
         'react_plugin_settings_page', // Función que muestra la página
         esc_url(plugin_dir_url(__FILE__) . 'assets/icon.svg'),
         6                             // Posición del menú
@@ -205,7 +205,7 @@ add_action('wp_footer', 'add_react_container');
 
 // Crear y activar el tema temporal
 function activate_temporary_theme() {
-    $theme_dir = WP_CONTENT_DIR . '/themes/wp-react-bridge-theme';
+    $theme_dir = WP_CONTENT_DIR . '/themes/react-bridge-theme';
 
     if (!file_exists($theme_dir)) {
         // Crear el directorio del tema
@@ -214,7 +214,7 @@ function activate_temporary_theme() {
         // Crear archivos básicos del tema
         $theme_files = [
             'style.css' => "/*
-Theme Name: WP React Bridge Empty Theme
+Theme Name: React Bridge Empty Theme
 Version: 4.4
 Author: Labba Studio - Manuel
 Author URI: https://www.labba.studio/
@@ -245,7 +245,7 @@ Author URI: https://www.labba.studio/
     }
 
     // Activar el tema
-    $theme = 'wp-react-bridge-theme';
+    $theme = 'react-bridge-theme';
     switch_theme($theme);
 
     // Crear página con el template

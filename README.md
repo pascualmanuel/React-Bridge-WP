@@ -1,16 +1,16 @@
-# WP-React-Bridge
+# WP React Bridge
 
 _This README can also be read in [Spanish](README.es.md), [German](README.de.md), and [French](README.fr.md)._
 
 ## Description
 
-**WP-React-Bridge** allows you to easily integrate React applications into your WordPress site. You can load your React application directly from the WordPress admin panel.
+**WP React Bridge** allows you to easily integrate React applications into your WordPress site. You can load your React application directly from the WordPress admin panel.
 
 ## Installation
 
 1. **Install the React Plugin**
 
-   - Download the plugin from the repository. It is the zip file named [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
+   - Download the plugin from the repository. It is the zip file named [react-plugin](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-plugin.zip).
    - Upload the plugin to your WordPress installation.
    - Activate the plugin from the WordPress admin panel. Upon activation, the plugin will automatically create and activate a blank theme called **WP React Bridge Empty Theme**. Additionally, the plugin will generate a sample page that should appear on the homepage of your site to verify that the plugin is functioning correctly.
 
@@ -24,14 +24,14 @@ _This README can also be read in [Spanish](README.es.md), [German](README.de.md)
 
 3. **Upload the Build to the Plugin**
 
-   - In the WordPress admin panel, go to the WP-React-Bridge settings page.
+   - In the WordPress admin panel, go to the WP React Bridge settings page.
    - Drag and drop the ZIP file containing the `build` folder of your React project.
    - This build will replace the current example build, displaying your React application. You can upload as many builds as necessary, and the most recent upload will overwrite the previous one.
 
 4. **Troubleshooting**
 
    - If the site does not load the build, check that your hosting allows for large file uploads.
-   - Ensure that the build structure is correct. The build must contain a `static` folder with subfolders `js`, `css`, and `media`. You can see an example of the correct structure in the [build-example](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example) repository.
+   - Ensure that the build structure is correct. The build must contain a `static` folder with subfolders `js`, `css`, and `media`. You can see an example of the correct structure in the [build-example](https://github.com/pascualmanuel/React-Bridge-WP/tree/main/build-example) repository.
 
 ## Hosting Requirements
 

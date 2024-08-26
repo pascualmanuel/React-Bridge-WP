@@ -13,10 +13,10 @@ function App() {
           alt="logo"
           style={{ position: "absolute", width: "45px", marginTop: "-100px" }}
         />
-        <p>WP React Bridge</p>
+        <p>React Bridge WP</p>
         <a
           className="App-link"
-          href="https://github.com/pascualmanuel/WP-React-Bridge"
+          href="https://github.com/pascualmanuel/React-Bridge-WP"
           target="_blank"
           rel="noopener noreferrer"
         >

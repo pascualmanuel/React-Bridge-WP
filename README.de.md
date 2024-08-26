@@ -10,7 +10,7 @@ _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md
 
 1. **Installieren Sie das React-Plugin**
 
-   - Laden Sie das Plugin aus dem Repository herunter. Es handelt sich um die ZIP-Datei namens [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
+   - Laden Sie das Plugin aus dem Repository herunter. Es handelt sich um die ZIP-Datei namens [react-plugin](https://github.com/pascualmanuel/React-Bridge-WP/blob/main/react-plugin.zip).
    - Laden Sie das Plugin in Ihre WordPress-Installation hoch.
    - Aktivieren Sie das Plugin im WordPress-Admin-Panel. Beim Aktivieren des Plugins wird automatisch ein leeres Theme mit dem Namen **React Bridge Empty Theme** erstellt und aktiviert. Außerdem wird das Plugin eine Beispielseite generieren, die auf der Startseite Ihrer Website angezeigt werden sollte, um zu überprüfen, ob das Plugin ordnungsgemäß funktioniert.
 
@@ -31,7 +31,7 @@ _Diese README-Datei kann auch auf [Englisch](README.md), [Spanisch](README.es.md
 4. **Fehlerbehebung**
 
    - Wenn die Seite das Build nicht lädt, überprüfen Sie, ob Ihr Hosting große Datei-Uploads zulässt.
-   - Stellen Sie sicher, dass die Struktur des Builds korrekt ist. Das Build muss einen `static`-Ordner enthalten, der die Unterordner `js`, `css` und `media` umfasst. Ein Beispiel für die korrekte Struktur finden Sie im Repository [build-example](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example).
+   - Stellen Sie sicher, dass die Struktur des Builds korrekt ist. Das Build muss einen `static`-Ordner enthalten, der die Unterordner `js`, `css` und `media` umfasst. Ein Beispiel für die korrekte Struktur finden Sie im Repository [build-example](https://github.com/pascualmanuel/React-Bridge-WP/tree/main/build-example).
 
 ## Hosting-Anforderungen
 
