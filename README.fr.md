@@ -1,69 +1,70 @@
 # WP-React-Bridge
 
-\_Ce fichier Readme peut également être lu en [espagnol](README.es.md),
-[allemand](README.de.md) et [français](README.fr.md)
+_Ce fichier README peut également être lu en [espagnol](README.es.md), [allemand](README.de.md) et [anglais](README.md)._
 
-## Descripción
+## Description
 
-El **WP-React-Bridge** permite integrar fácilmente aplicaciones React en tu sitio de WordPress. Puedes cargar tu aplicación React directamente desde el panel de administración de WordPress.
+Le **WP-React-Bridge** permet d'intégrer facilement des applications React sur votre site WordPress. Vous pouvez charger votre application React directement depuis le panneau d'administration de WordPress.
 
-## Instalación
+## Installation
 
-1. **Instala el Plugin React**
+1. **Installer le Plugin React**
 
-   - Descarga el plugin desde el repositorio. Es el zip llamado [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
-   - Sube el plugin a tu WordPress.
-   - Activa el plugin desde el panel de administración de WordPress. Al activar el plugin, se creará y activará automáticamente un tema vacío llamado **WP React Bridge Empty Theme**. Además, el plugin generará una página de ejemplo, que debería mostrarse en la página principal del sitio para verificar que el plugin está funcionando correctamente.
+   - Téléchargez le plugin depuis le dépôt. Il s'agit du fichier zip nommé [react-plugin](https://github.com/pascualmanuel/WP-React-Bridge/blob/main/react-plugin.zip).
+   - Téléversez le plugin sur votre installation WordPress.
+   - Activez le plugin depuis le panneau d'administration de WordPress. Lors de l'activation du plugin, un thème vide nommé **WP React Bridge Empty Theme** sera automatiquement créé et activé. De plus, le plugin générera une page exemple qui devrait s'afficher sur la page d'accueil du site pour vérifier que le plugin fonctionne correctement.
 
-2. **Configura el Proyecto React**
+2. **Configurer le Projet React**
 
-   - En el archivo `package.json` de tu proyecto React, agrega la siguiente línea al final del archivo:
+   - Dans le fichier `package.json` de votre projet React, ajoutez la ligne suivante à la fin du fichier :
      ```json
      "homepage": "/wp-content/plugins/react-plugin/build"
      ```
-   - Construye tu proyecto React ejecutando `npm run build` o `yarn build`.
+   - Construisez votre projet React en exécutant `npm run build` ou `yarn build`.
 
-3. **Sube el Build al Plugin**
+3. **Téléversez le Build sur le Plugin**
 
-   - En el panel de administración de WordPress, ve a la página de configuración del WP-React-Bridge.
-   - Arrastra y suelta el archivo ZIP que contiene la carpeta `build` de tu proyecto React.
-   - Ese build suplantará el build actual de ejemplo mostrando tu aplicación de React. Se pueden subir tantos builds como sea necesario, y el último que se suba sobrescribirá el anterior.
+   - Dans le panneau d'administration de WordPress, allez à la page de configuration du WP-React-Bridge.
+   - Glissez et déposez le fichier ZIP contenant le dossier `build` de votre projet React.
+   - Ce build remplacera le build exemple actuel, affichant ainsi votre application React. Vous pouvez téléverser autant de builds que nécessaire, et le dernier téléversé écrasera le précédent.
 
-4. **Solución de Problemas**
+4. **Dépannage**
 
-   - Si el sitio no carga el build, verifica que tu hosting permita subir archivos pesados.
-   - Asegúrate de que la estructura del build sea correcta. El build debe contener una carpeta `static` que incluya las subcarpetas `js`, `css`, y `media`. Puedes ver un ejemplo de la estructura correcta en el repositorio [build-example](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example).
+   - Si le site ne charge pas le build, vérifiez que votre hébergement permet le téléversement de fichiers volumineux.
+   - Assurez-vous que la structure du build est correcte. Le build doit contenir un dossier `static` incluant les sous-dossiers `js`, `css`, et `media`. Vous pouvez voir un exemple de la structure correcte dans le dépôt [build-example](https://github.com/pascualmanuel/WP-React-Bridge/tree/main/build-example).
 
-## Requisitos del Hosting
+## Exigences d'Hébergement
 
-- **Capacidad para Subir Archivos Grandes:**
+- **Capacité de Téléversement de Fichiers Volumineux:**
 
-  - Asegúrate de que tu hosting permita la carga de archivos grandes, ya que el build de React puede ser significativo en tamaño. Revisa la configuración de `upload_max_filesize` y `post_max_size` en el archivo `php.ini`.
+  - Assurez-vous que votre hébergement permet le téléversement de fichiers volumineux, car le build React peut être assez conséquent. Vérifiez les paramètres `upload_max_filesize` et `post_max_size` dans le fichier `php.ini`.
 
-- **PHP y WordPress:**
+- **PHP et WordPress:**
 
-  - El plugin debe ser compatible con la versión de PHP que está usando tu instalación de WordPress. Asegúrate de usar una versión actualizada de PHP y WordPress. Idealmente, PHP 7.4 o superior y WordPress 5.8 o superior.
+  - Le plugin doit être compatible avec la version de PHP utilisée par votre installation WordPress. Assurez-vous d'utiliser une version à jour de PHP et WordPress. Idéalement, PHP 7.4 ou supérieur et WordPress 5.8 ou supérieur.
 
-- **Permisos de Archivo y Carpeta:**
+- **Permissions de Fichiers et Dossiers:**
 
-  - El servidor debe permitir la escritura en los directorios donde se almacenan los archivos del build de React. Verifica que los permisos para los directorios `wp-content/plugins/` y `wp-content/themes/` sean adecuados.
+  - Le serveur doit permettre l'écriture dans les répertoires où sont stockés les fichiers du build React. Vérifiez que les permissions pour les répertoires `wp-content/plugins/` et `wp-content/themes/` sont adéquates.
 
-- **Recursos del Servidor:**
+- **Ressources du Serveur:**
 
-  - Si el build de React es pesado, tu servidor debe tener suficientes recursos (CPU y RAM) para manejar la carga. Los servidores compartidos podrían tener limitaciones en comparación con servidores dedicados o VPS.
+  - Si le build React est volumineux, votre serveur doit avoir suffisamment de ressources (CPU et RAM) pour gérer la charge. Les serveurs partagés peuvent avoir des limitations par rapport aux serveurs dédiés ou VPS.
 
-- **Compatibilidad con Plugins y Temas:**
-  - Asegúrate de que no haya conflictos con otros plugins o temas que puedan interferir con la carga de scripts y estilos. Un entorno de prueba es útil para validar estas configuraciones.
+- **Compatibilité avec les Plugins et Thèmes:**
 
-## Nota Adicional
+  - Assurez-vous qu'il n'y a pas de conflits avec d'autres plugins ou thèmes qui pourraient interférer avec le chargement des scripts et des styles. Un environnement de test est utile pour valider ces configurations.
 
-- **Seguridad:**
-  - Asegúrate de que el hosting tenga medidas adecuadas de seguridad para proteger tanto el plugin como la aplicación React. Esto incluye configuraciones básicas como firewalls y protección contra malware.
+## Note Supplémentaire
 
-## Uso
+- **Sécurité:**
 
-Una vez que hayas subido y activado tu aplicación React, el contenido se mostrará en la página creada por el plugin. No necesitas modificar el tema de WordPress, ya que el plugin manejará la carga de tu aplicación React.
+  - Assurez-vous que l'hébergement dispose de mesures de sécurité adéquates pour protéger à la fois le plugin et l'application React. Cela inclut des configurations de base telles que des pare-feux et une protection contre les logiciels malveillants.
 
-## Licencia
+## Utilisation
 
-Este plugin está disponible bajo la [Licencia MIT](enlace-a-la-licencia).
+Une fois que vous avez téléversé et activé votre application React, le contenu sera affiché sur la page créée par le plugin. Vous n'avez pas besoin de modifier le thème WordPress, car le plugin se chargera du chargement de votre application React.
+
+## Licence
+
+Ce plugin est disponible sous la [Licence MIT](link-to-license).
