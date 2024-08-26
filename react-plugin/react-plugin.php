@@ -214,7 +214,10 @@ function activate_temporary_theme() {
         // Crear archivos básicos del tema
         $theme_files = [
             'style.css' => "/*
-Theme Name: WP React Bridge Theme
+Theme Name: WP React Bridge Empty Theme
+Version: 4.4
+Author: Labba Studio - Manuel
+Author URI: https://www.labba.studio/
 */",
             'index.php' => "<?php
             get_header();
