@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP-React-Bridge
 Description: Un plugin para integrar React en WordPress.
-Version: 4.9
+Version: 6.5
 Author: Labba Studio - Manuel
 Author URI: http://www.labba.studio/
 */
@@ -15,12 +15,11 @@ function react_plugin_menu() {
         'manage_options',             // Capacidad
         'wp-react-bridge',            // Slug del menú
         'react_plugin_settings_page', // Función que muestra la página
-        plugin_dir_url(__FILE__) . 'assets/icon.svg', // URL del ícono SVG personalizado
+        esc_url(plugin_dir_url(__FILE__) . 'assets/icon.svg'),
         6                             // Posición del menú
     );
 }
 add_action('admin_menu', 'react_plugin_menu');
-
 
 // Mostrar la página de configuración
 function react_plugin_settings_page() {
@@ -28,7 +27,9 @@ function react_plugin_settings_page() {
     <div class="wrap">
         <h1>Configuración del Plugin React</h1>
         <form method="post" enctype="multipart/form-data" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
-            <input type="hidden" name="action" value="handle_file_upload" />
+        <input type="hidden" name="action" value="handle_file_upload" />
+        <?php wp_nonce_field('react_plugin_file_upload', 'react_plugin_file_upload_nonce'); ?>
+
             <table class="form-table">
                 <tr valign="top">
                     <th scope="row">Cargar Carpeta Build</th>
@@ -58,6 +59,11 @@ function react_plugin_settings_page() {
 function handle_file_upload() {
     if (!current_user_can('manage_options')) {
         wp_die('No tienes permisos suficientes para acceder a esta página.');
+    }
+
+    // Verificar el nonce para mayor seguridad
+    if (!isset($_POST['react_plugin_file_upload_nonce']) || !wp_verify_nonce($_POST['react_plugin_file_upload_nonce'], 'react_plugin_file_upload')) {
+        wp_die('Error de seguridad. Acción no permitida.');
     }
 
     if (isset($_FILES['react_plugin_build_upload']) && !empty($_FILES['react_plugin_build_upload']['tmp_name'])) {
@@ -197,7 +203,55 @@ function add_react_container() {
 }
 add_action('wp_footer', 'add_react_container');
 
-// Agregar una página personalizada con un template específico
+// Crear y activar el tema temporal
+function activate_temporary_theme() {
+    $theme_dir = WP_CONTENT_DIR . '/themes/wp-react-bridge-theme';
+
+    if (!file_exists($theme_dir)) {
+        // Crear el directorio del tema
+        wp_mkdir_p($theme_dir);
+
+        // Crear archivos básicos del tema
+        $theme_files = [
+            'style.css' => "/*
+Theme Name: WP React Bridge Theme
+*/",
+            'index.php' => "<?php
+            get_header();
+            ?>
+            <div id='root'></div>
+            <?php
+            get_footer();
+            ?>",
+            'header.php' => "<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset=\"<?php bloginfo('charset'); ?>\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>",
+            'footer.php' => "<?php wp_footer(); ?>
+</body>
+</html>"
+        ];
+
+        foreach ($theme_files as $file => $content) {
+            file_put_contents($theme_dir . '/' . $file, $content);
+        }
+    }
+
+    // Activar el tema
+    $theme = 'wp-react-bridge-theme';
+    switch_theme($theme);
+
+    // Crear página con el template
+    create_react_page();
+}
+
+add_action('plugins_loaded', 'activate_temporary_theme');
+
+// Crear una página personalizada con un template específico
 function create_react_page() {
     $page_title = 'React App';
     $page_content = '[react_app]';
@@ -208,10 +262,11 @@ function create_react_page() {
             'post_title' => $page_title,
             'post_content' => $page_content,
             'post_status' => 'publish',
-            'post_type' => 'page',
-            'page_template' => $page_template
+            'post_type' => 'page'
         ));
+        // Asignar el template a la página
+        update_post_meta($page_id, '_wp_page_template', $page_template);
     }
 }
-add_action('init', 'create_react_page');
+
 ?>
