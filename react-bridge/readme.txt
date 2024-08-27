@@ -5,8 +5,8 @@ Requires at least: 5.8
 Tested up to: 6.6
 Requires PHP: 7.4
 Stable tag: 7.1.0
-License: MIT
-License URI: https://opensource.org/licenses/MIT
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 React Integration Bridge allows you to easily integrate React applications into your WordPress site. You can load your React application directly from the WordPress admin panel.
 
