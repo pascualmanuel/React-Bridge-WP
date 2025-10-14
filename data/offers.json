@@ -1,0 +1,11 @@
+[
+  {
+    "id": "offer_1",
+    "image": "https://example.com/wp-content/uploads/2025/01/sample1.jpg",
+    "title": "From 50% OFF month",
+    "description": "Long term stays - 30 nights + relax to the max enjoy free high speed internet in each room",
+    "voucher": "Use voucher: 50MONTH",
+    "buttonText": "Get this offer",
+    "buttonLink": "https://beds24.com/booking2.php?propid=63844"
+  }
+]
